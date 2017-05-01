@@ -46,6 +46,7 @@ module.exports = {
           fallback: 'style-loader', // use style-loader in development mode
         }),
       },
+
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -53,6 +54,7 @@ module.exports = {
       },
     ],
   },
+
   plugins: [
     extractSass,
   ],
