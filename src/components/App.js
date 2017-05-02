@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 import { Switch } from 'react-router';
+import Counter from '../containers/counter';
+import Controls from '../containers/Controls';
 
 
 // import './src/style.scss';
@@ -23,7 +24,10 @@ const About = (props) => {
   return <div> All there is to know about me </div>;
 };
 const Welcome = (props) => {
-  return <div>Welcome</div>;
+  return (<div>Welcome
+    <Counter />
+    <Controls />
+  </div>);
 };
 
 const Test = (props) => {
@@ -50,4 +54,5 @@ const App = (props) => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('main'));
+
+export default App;
